@@ -54,8 +54,6 @@ class UserProvider extends Component {
                 matchedUsers.push(element)
             }
         }
-        console.log(matchedUsers);
-        console.log(matchedUsers.length)
         if (matchedUsers.length !== 0)  {this.setState({matchedUsers:matchedUsers, isMatchedUsers:true} )} 
         else { this.setState({matchedUsers:[], isMatchedUsers : false})}
       
@@ -64,7 +62,6 @@ class UserProvider extends Component {
         try{
             let res = await fetch('https://demo9197058.mockable.io/users')
             let data = await res.json();
-            console.log(data)
         let elem = data[0];
         var clone = Object.assign({}, {...elem});
         delete clone.id;
