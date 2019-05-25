@@ -1,0 +1,71 @@
+/* * {
+  margin: 2px;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+
+:root {
+  --table-header: #1976D2;
+--table-header-border: #1565C0;
+--table-border: #d9d9d9;
+--row-bg: #f4f2f1;
+  --primaryColor:#2061c9;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #cfcfcf;
+  --mainTransition: all .3s linear;
+  --mainSpacing: 3px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+/* body {
+  padding-top: 25px;
+  display:flex;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.4;
+} */
+body {
+  margin:2rem;
+
+}
+.loading {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 3rem;
+}
+.searchinput {
+  
+  box-sizing: border-box;
+  border: transparent; 
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.searchinput:focus{
+  outline: none
+}
+.header-section{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  margin: 10px;
+  padding:2px;
+ 
+}
+
+
+.header-section  div p{
+ 
+  margin: 10px;
+ 
+}
+
