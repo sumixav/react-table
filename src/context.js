@@ -23,9 +23,6 @@ class UserProvider extends Component {
         return (this.state.users.length / this.state.maxRecordsPerPage)
     }
 
-    getPages = () =>{
-
-    }
     onPageChanged = (data) => {
         const { users } = this.state;
         const { currentPage, totalPages, pageLimit } = data;
@@ -65,7 +62,7 @@ class UserProvider extends Component {
     }
     getData = async() => {
         try{
-            let res = await fetch('http://demo9197058.mockable.io/users')
+            let res = await fetch('https://demo9197058.mockable.io/users')
             let data = await res.json();
             console.log(data)
         let elem = data[0];
