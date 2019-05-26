@@ -91,9 +91,10 @@ const Table = ({ columns, users }) => {
 
     const renderColumns = () => {
         return columns.map((col, index) => {
+           let col_str = col.replace(/_/, ' ');  
             return (
                 <Th onClick={() => sortbyCol(col)} key={index}>
-                {col}
+                {col_str}
                 <FaSort />                
                 </Th>
             )
