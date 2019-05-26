@@ -91,7 +91,7 @@ const Table = ({ columns, users }) => {
 
     const renderColumns = () => {
         return columns.map((col, index) => {
-           let col_str = col.replace(/_/, ' ');  
+           let col_str = col.replace(/_/g, ' ');  
             return (
                 <Th onClick={() => sortbyCol(col)} key={index}>
                 {col_str}

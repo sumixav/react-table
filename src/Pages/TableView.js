@@ -4,7 +4,7 @@ import Search from '../Components/Search'
 import Pagination from '../Components/Pagination'
 import Loading from '../Components/Loading'
 import { UserContext } from '../context'
-import PageNumbers from '../Components/PageNumbers'
+import RecordNos from '../Components/RecordNos'
 
 
 const TableView = () => {
@@ -25,12 +25,12 @@ const TableView = () => {
                         <Search />
                     </div>
                     <div>
-                        <PageNumbers totalPages={totalPages} currentPage={currentPage} maxRecordsPerPage={maxRecordsPerPage} />
+                        <RecordNos totalRecords={users.length} currentPage={currentPage} maxRecordsPerPage={maxRecordsPerPage} />
                     </div>
                 </div>
 
                 <Table columns={columns} users={isMatchedUsers ? matchedUsers : currentUsers} />
-                <Pagination totalRecords={users.length} pageLimit={maxRecordsPerPage} pageNeighbours={1} onPageChanged={onPageChanged} />
+                <Pagination totalRecords={users.length} pageLimit={maxRecordsPerPage} pageNeighbours={4} onPageChanged={onPageChanged} />
             
             </Fragment>
         )
